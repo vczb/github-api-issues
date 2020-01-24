@@ -112,3 +112,32 @@ export const IssuesList = styled.ul`
   }
 
 `;
+
+export const PageActions = styled.div`
+
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  padding-top:10px;
+
+  button{
+    border: none;
+    background: transparent;
+
+    &:disabled{
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
+
+  }
+`;
+
+export const SelectBox = styled.select`
+  background:  #0D2636;
+  border: none;
+  padding: 5px;
+  color: #FFF;
+  margin-top: 50px;
+  margin-left: 30px;
+  font-size: 15px;
+`;
