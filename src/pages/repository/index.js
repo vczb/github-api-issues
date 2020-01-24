@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {Container,Owner,Loading,BackButton} from './styles';
+import {Container,Owner,Loading,BackButton, IssuesList} from './styles';
 import { FaArrowLeft } from 'react-icons/fa';
 import api from '../../services/api';
 
@@ -52,6 +52,31 @@ export default function Repository({match}){
         <h1>  {repository.name}         </h1>
         <p>   {repository.description}  </p>
       </Owner>
+
+      <IssuesList>
+        {
+          issues.map(issues =>(
+            <li key={String(issues.id)} >
+              <img src={issues.user.avatar_url} alt={issues.user.login}/>
+              <div>
+                <strong>
+                  <a href={issues.html_url} > {issues.title} </a>
+
+                  {
+                    issues.labels.map(label=>(
+                      <span key={label.id} > {label.name} </span>
+                    ))
+                  }
+                </strong>
+                <p>
+                  { issues.user.login }
+                </p>
+              </div>
+            </li>
+          ))
+        }
+      </IssuesList>
+
     </Container>
   )
 }
