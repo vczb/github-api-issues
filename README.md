@@ -1,11 +1,20 @@
-# github-api-issues
+# App para listar Issues do GitHub
 
-### App para listar Issues do GitHub
+##### Consumindo a API do GitHub com Axios
 
-Ex.
+<img src="https://firebasestorage.googleapis.com/v0/b/imagestorage-4f902.appspot.com/o/GitHub%2Fgithub-api-issues%2Fgithub-api-issues.png?alt=media&token=2601a675-082b-4225-858d-c497afc51d06" />
 
-facebook/react
+<img src="https://firebasestorage.googleapis.com/v0/b/imagestorage-4f902.appspot.com/o/GitHub%2Fgithub-api-issues%2Fgithub-api-issues-listar.png?alt=media&token=9664d16e-2528-4de6-bce5-38ee6b363435" />
 
-vue/vue
 
-ruby/ruby
+### Instalação
+
+- https://github.com/vczb/github-api-issues.git
+- cd github-api-issues
+- npm install
+- npm start
+
+
+### Por: 
+
+[vczb](https://github.com/vczb)
